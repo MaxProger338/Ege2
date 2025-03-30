@@ -17,7 +17,7 @@ namespace Victory
                 var stage = new Rule("Авторизация");
                 AnsiConsole.Write(stage);
 
-                if (Entry.Auth(user)) break;
+                if (Entry.Auth(ref user)) break;
             }
             return user;
         }
@@ -99,9 +99,8 @@ namespace Victory
                 case REG:  user = Reg();  break;
                 default:   Exit();        return;
             }
-            if (user == null) return;
+            if (user == null) Colors.Print("red", "Пользователь не получен!\n"); return;
             Console.Clear();
-
             
             while (true) {
                 if (ShowChoose()) Exit(); return;

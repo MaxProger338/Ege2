@@ -22,7 +22,7 @@ namespace Victory
             return data;
         }
 
-        public static bool Auth(User? user)
+        public static bool Auth(ref User? user)
         {
             string login, password;
             errors ??= ["", ""];
