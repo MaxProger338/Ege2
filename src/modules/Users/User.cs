@@ -1,6 +1,6 @@
 namespace Victory
 {
-    class User(string name, string birthday, string login, string password)
+    public class User(string name, string birthday, string login, string password)
     {
         public string Name { get; set; } = name;
         public string Birthday { get; set; /* ... */ } = birthday;

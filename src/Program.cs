@@ -7,24 +7,30 @@ namespace Victory
         public const string AUTH = "Авторизация";
         public const string REG  = "Регистрация";
         
-        public static void Auth()
+        public static User Auth()
         {
-            Console.Clear();
-            var stage = new Rule("Авторизация");
-            AnsiConsole.Write(stage);
+            User user = null; 
+            while (true) {
+                Console.Clear();
+                var stage = new Rule("Авторизация");
+                AnsiConsole.Write(stage);
 
-            Entry.Auth();
+                if (Entry.Auth(user)) break;
+            }
+            return user;
         }
 
-        public static void Reg()
+        public static User Reg()
         {
+            User user = null; 
             while (true) {
                 Console.Clear();
                 var stage = new Rule("Регистрация");
                 AnsiConsole.Write(stage);
 
-                if (Entry.Reg()) break;
+                if (Entry.Reg(user)) break;
             }
+            return user;
         }
 
         public static void Exit()
