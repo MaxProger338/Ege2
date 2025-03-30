@@ -47,7 +47,7 @@ namespace Victory
             return true;
         }
 
-        public static bool Reg(User? user)
+        public static bool Reg(ref User? user)
         {
             string login, password, name, birthday;
             errors ??= ["", "", "", ""];

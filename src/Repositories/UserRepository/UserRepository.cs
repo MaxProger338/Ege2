@@ -28,8 +28,8 @@ namespace Victory
             var users = GetAllUsers();
             var existingUser = users.FirstOrDefault(u => u.Login == user.Login);
 
-            if (existingUser == null)
-                users.Add(user);
+            if (existingUser != null) existingUser.Score = user.Score;
+            else users.Add(user);
 
             SaveAllUsers(users);
         }

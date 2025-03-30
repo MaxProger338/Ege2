@@ -35,7 +35,7 @@ namespace Victory
         }
 
         // Получить пользователя по логину
-        public Quiz GetUserByName(string name)
+        public Quiz GetQuizByName(string name)
         {
             return GetAllQuizes()
                 .FirstOrDefault(u => u.Name == name);
