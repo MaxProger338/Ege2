@@ -1,6 +1,4 @@
-﻿using System;
-using Spectre.Console;
-using System.Reflection;
+﻿using Spectre.Console;
 
 namespace Victory
 {
@@ -14,19 +12,24 @@ namespace Victory
             Console.Clear();
             var stage = new Rule("Авторизация");
             AnsiConsole.Write(stage);
+
+            Entry.Auth();
         }
 
         public static void Reg()
         {
-            Console.Clear();
-            var stage = new Rule("Регистрация");
-            AnsiConsole.Write(stage);
+            while (true) {
+                Console.Clear();
+                var stage = new Rule("Регистрация");
+                AnsiConsole.Write(stage);
+
+                if (Entry.Reg()) break;
+            }
         }
 
         public static void Exit()
         {
             Console.Clear();
-            //Colors.Print("purple", "Досвидания!\n");
         }
 
         public static void Main()
