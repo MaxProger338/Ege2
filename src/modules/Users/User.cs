@@ -19,8 +19,7 @@ namespace Victory
             var rule = new Rule("Результаты");
             AnsiConsole.Write(rule);
 
-            float procent = (float)Score[quiz.Name] / quiz.Questions.Length;
-            Colors.Print("red", procent.ToString());
+            int procent = (int)((float)Score[quiz.Name] / quiz.Questions.Length * 100f);
             AnsiConsole.Write(
                 new FigletText($"{Score[quiz.Name]} / {quiz.Questions.Length.ToString()} ({procent}%)")
                     .LeftJustified()

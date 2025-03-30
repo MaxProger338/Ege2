@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "BhmsH2YMF4Y=",
+  "success": true,
+  "projectFilePath": "/home/fazber/Code/Ege2/Ege2.csproj",
+  "expectedPackageFiles": [
+    "/home/fazber/.nuget/packages/microsoft.data.sqlite/9.0.3/microsoft.data.sqlite.9.0.3.nupkg.sha512",
+    "/home/fazber/.nuget/packages/microsoft.data.sqlite.core/9.0.3/microsoft.data.sqlite.core.9.0.3.nupkg.sha512",
+    "/home/fazber/.nuget/packages/spectre.console/0.49.1/spectre.console.0.49.1.nupkg.sha512",
+    "/home/fazber/.nuget/packages/sqlitepclraw.bundle_e_sqlite3/2.1.10/sqlitepclraw.bundle_e_sqlite3.2.1.10.nupkg.sha512",
+    "/home/fazber/.nuget/packages/sqlitepclraw.core/2.1.10/sqlitepclraw.core.2.1.10.nupkg.sha512",
+    "/home/fazber/.nuget/packages/sqlitepclraw.lib.e_sqlite3/2.1.10/sqlitepclraw.lib.e_sqlite3.2.1.10.nupkg.sha512",
+    "/home/fazber/.nuget/packages/sqlitepclraw.provider.e_sqlite3/2.1.10/sqlitepclraw.provider.e_sqlite3.2.1.10.nupkg.sha512",
+    "/home/fazber/.nuget/packages/system.memory/4.5.3/system.memory.4.5.3.nupkg.sha512",
+    "/home/fazber/.nuget/packages/microsoft.aspnetcore.app.ref/9.0.3/microsoft.aspnetcore.app.ref.9.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

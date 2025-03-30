@@ -1,0 +1,12 @@
+[
+  {
+    "Name": "lol",
+    "Birthday": "11.11.1111",
+    "Login": "lol",
+    "Password": "lol",
+    "Score": {
+      "Number 1": 0,
+      "Number 2": 1
+    }
+  }
+]
