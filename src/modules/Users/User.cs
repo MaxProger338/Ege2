@@ -7,5 +7,10 @@ namespace Victory
 
         public string Login { get; set; } = login;
         public string Password { get; set; } = password;
+
+        public void CompleteVictory(Quiz quiz)
+        {
+            
+        }
     }
 }

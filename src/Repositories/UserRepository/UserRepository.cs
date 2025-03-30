@@ -7,7 +7,6 @@ namespace Victory
     {
         private const string PATH = "data/users.json";
 
-        // Получить всех пользователей
         public List<User> GetAllUsers()
         {
             if (!File.Exists(PATH))
@@ -17,7 +16,6 @@ namespace Victory
             return JsonSerializer.Deserialize<List<User>>(json) ?? new List<User>();
         }
 
-        // Сохранить всех пользователей в файл
         private void SaveAllUsers(List<User> users)
         {
             var options = new JsonSerializerOptions { WriteIndented = true }; // Красивый JSON
@@ -25,22 +23,17 @@ namespace Victory
             File.WriteAllText(PATH, json);
         }
 
-        // Добавить или обновить пользователя
         public void SaveUser(User user)
         {
             var users = GetAllUsers();
             var existingUser = users.FirstOrDefault(u => u.Login == user.Login);
 
-            if (existingUser != null)
-                // Обновляем пароль (или другие поля)
-                existingUser.Password = user.Password;
-            else
+            if (existingUser == null)
                 users.Add(user);
 
             SaveAllUsers(users);
         }
 
-        // Получить пользователя по логину
         public User GetUserByLogin(string login)
         {
             return GetAllUsers()
